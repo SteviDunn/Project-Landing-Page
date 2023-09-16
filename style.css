@@ -1,0 +1,116 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    border-radius: 50%;
+
+}
+.logo-small{
+    display: flex;
+    height: 100px;
+    padding: 12px;
+    padding-top: 24px;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+    justify-content: flex-end;
+}
+.links a {
+    text-decoration: none;
+    color: darkolivegreen;
+    transition: color 0.3s;
+    padding: 12px;
+    font-size: 20px;
+    font-family: 'Rubik Mono One','Times New Roman', Times, serif;
+}
+.links a:hover{
+    color: pink;
+}
+
+.container-0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 35px;
+    color: darkolivegreen;
+    background-color: rgb(252, 235, 213);
+}
+.logo-large{
+    display: flex;
+    height: 300px;
+}
+
+.container-0 span{
+    transition: color 0.3s;
+
+}
+.container-0 span:hover{
+    color:pink;
+}
+.button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.join-button {
+    background-color: rgb(238, 132, 176); /* Background color */
+    color: rgb(205, 247, 181); /* Text color */
+    padding: 10px 20px; /* Padding (top/bottom, left/right) */
+    font-size: 14px; /* Font size */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: all 0.3s ease-in-out;
+    font-family: 'Rubik Mono One','Times New Roman', Times, serif;
+}
+.join-button:hover {
+    background-color: darkolivegreen; 
+    color: rgb(205, 247, 181);/* Background color on hover */
+    /* Add other hover styles as desired */
+}
+
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: darkolivegreen;
+}
+
+.container-2{
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 20%; /* Adjust the width of each box as needed */
+    /*background-color: #007bff; /* Background color of the box */
+    color: rgb(65, 57, 57); /* Text color inside the box */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add padding to the box */
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box-content{
+    width: 200px; /* Set a fixed width for the container */
+    height: 200px; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide any parts of the image that exceed the container */
+
+}
+.square-image{
+    width: 100%; /* Make the image width 100% of the container width */
+    height: auto; /* Automatically adjust the image height to maintain its aspect ratio */
+    object-fit: cover; /* Maintain the image's aspect ratio and cover the container */
+    border: 5px solid pink;
+}
