@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(189, 202, 165);
+    position: sticky; /* Make the first container sticky */
+    top: 0; /* Stick it to the top of the viewport */
+    z-index: 100;
 }
 .logo{
     border-radius: 50%;
@@ -39,7 +43,8 @@
     gap: 20px;
     font-size: 35px;
     color: darkolivegreen;
-    background-color: rgb(252, 235, 213);
+    background-color: rgb(241, 206, 223);
+    
 }
 .logo-large{
     display: flex;
@@ -47,16 +52,17 @@
 }
 
 .container-0 span{
-    transition: color 0.3s;
+    transition: weight 0.4s;
 
 }
 .container-0 span:hover{
-    color:pink;
+    text-shadow:  0 0 7px rgb(189, 202, 165);
 }
 .button{
     display:flex;
     align-items: center;
     justify-content: center;
+    background-color: beige;
     
 }
 .join-button {
@@ -70,10 +76,12 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow */
     transition: all 0.3s ease-in-out;
     font-family: 'Rubik Mono One','Times New Roman', Times, serif;
+    margin: 20px;
+
 }
 .join-button:hover {
     background-color: darkolivegreen; 
-    color: rgb(205, 247, 181);/* Background color on hover */
+    color: rgb(221, 233, 214);/* Background color on hover */
     /* Add other hover styles as desired */
 }
 
@@ -83,11 +91,13 @@
     justify-content: center;
     font-size: 30px;
     color: darkolivegreen;
+    background-color: beige;
 }
 
 .container-2{
     display: flex;
     justify-content: center;
+    background-color:  beige
 }
 
 .box {
@@ -108,9 +118,50 @@
     overflow: hidden; /* Hide any parts of the image that exceed the container */
 
 }
+.box-text{
+    color: darkolivegreen;
+    font-size: 20px;
+    
+}
 .square-image{
-    width: 100%; /* Make the image width 100% of the container width */
+    width: 80%; /* Make the image width 100% of the container width */
     height: auto; /* Automatically adjust the image height to maintain its aspect ratio */
     object-fit: cover; /* Maintain the image's aspect ratio and cover the container */
     border: 5px solid pink;
+    transition: transform 0.2s ease;
+    border-radius: 20%;
 }
+.square-image:hover{
+    transform: scale(1.1);
+}
+
+.container-3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 206, 223);
+    padding: 30px;
+}
+.container-3 p {
+    font-size: 40px;
+    color: darkolivegreen;
+    text-align: center;
+}
+.container-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: darkolivegreen;
+    text-align: center;
+    background-color: beige;
+}
+ footer{
+    display:flex;
+    background-color: rgb(189, 202, 165);
+    color: darkolivegreen;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
